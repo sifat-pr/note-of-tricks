@@ -25,3 +25,43 @@ Cryptography is the practice of securing information and communications using co
 ### Hash Decoder Online Tools
 1. [Hashes.com](https://hashes.com/en/decrypt/hash)
 2. [Base64Decode](https://www.base64decode.org/) For Base64 Encoding and Decoding
+
+## Reverse Engineering on Apk
+First of all if we wanna see source code of any application we need to decomplie it we can use apktool to decompile and building apks.
+For decomplie an app use this command `apktool d name.apk`
+For Building an app use this cmmand `apktool b foldername`
+
+After modifying source code and building the app we have to sign and compress the app. 
+*For signing the app we need to generate a hash key that stores additional info.*
+**Generating a key using keytool - (Example command)**
+```bash
+keytool -genkey -v -keystore CTF.keystore -alias CTF.keystore -keyalg RSA -keysize 2048 -validity 10000
+```
+**Signing the key to our builded app - (Example command)**
+```bash
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 <apk file path> CTF_keystore
+
+jarsigner -verify -verbose -certs <apk file path> # Verify the key is signed or not
+```
+**Use Zipalign to compress the app - (Example command)**
+```bash
+zipalign -v 4 <unsigned apk file path> <aligned apk file path>
+```
+
+## 🫠 Additional Tricks
+**Create symbolic link to run file instead of another**
+```bash
+sudo ln -s <path of actual file that will run> <path of the linked file>
+```
+**Upgrade reverse shell to TTY**
+```bash
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+**Find SUID files in linux.**
+```bash
+find / -type f -perm -u=s 2>/dev/null
+```
+**Find how many services are running on a linux system.**
+```bash
+systemctl list-units --type=service --state=running
+```
