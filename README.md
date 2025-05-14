@@ -16,8 +16,12 @@ Cryptography is the practice of securing information and communications using co
 - [BoxenTriq.com](https://www.boxentriq.com/code-breaking/caesar-cipher)
 - [Dcode.fr](https://www.dcode.fr/cipher-identifier)
 - [Cryptii.com](https://cryptii.com/pipes/caesar-cipher)
-- 
+**For Encoding and Decoding you can also use** [CyberSHef.io](https://cyberchef.io/)
 
 ### Use Online Tools to Identify Hashes
 1. [Hashes.com](https://hashes.com/en/tools/hash_identifier)
 2. [TunnelsUp.com](https://www.tunnelsup.com/hash-analyzer/)
+
+### Hash Decoder Online Tools
+1. [Hashes.com](https://hashes.com/en/decrypt/hash)
+2. [Base64Decode](https://www.base64decode.org/) For Base64 Encoding and Decoding
