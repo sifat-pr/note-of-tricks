@@ -40,8 +40,13 @@ keytool -genkey -v -keystore CTF.keystore -alias CTF.keystore -keyalg RSA -keysi
 **Signing the key to our builded app - (Example command)**
 ```bash
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 <apk file path> CTF_keystore
+# Or you can use apksigner
+apksigner sign --ks CTF.keystore --ks-key-alias CTF.keystore --out app-release-signed.apk <app path>
 
-jarsigner -verify -verbose -certs <apk file path> # Verify the key is signed or not
+# Verify the key is signed or not
+jarsigner -verify -verbose -certs <apk file path>
+# Or
+apksigner verify <app path>
 ```
 **Use Zipalign to compress the app - (Example command)**
 ```bash
