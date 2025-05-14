@@ -65,6 +65,8 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 **Find SUID files in linux.**
 ```bash
 find / -type f -perm -u=s 2>/dev/null
+
+sudo -l # It lists the commands the current user is allowed to run with sudo.
 ```
 **Find how many services are running on a linux system.**
 ```bash
