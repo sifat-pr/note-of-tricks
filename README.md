@@ -72,3 +72,8 @@ sudo -l # It lists the commands the current user is allowed to run with sudo.
 ```bash
 systemctl list-units --type=service --state=running
 ```
+## Website Highlights
+- [GTFObbins](https://gtfobins.github.io) - Unix binaries for privilege escalation.
+- [Playit.gg](https://playit.gg) - Free port forwarding for gamers.
+- [HackTricks](https://book.hacktricks.wiki/) - Hacking techniques and privilege escalation.
+- [LostSec](https://lostsec.xyz/) - Bug bounty tools and recon.
