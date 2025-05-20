@@ -79,3 +79,4 @@ systemctl list-units --type=service --state=running
 - [LostSec](https://lostsec.xyz/) - Bug bounty tools and recon.
 - [BugBountyHunter](https://www.bugbountyhunter.com/) - Take your learnig to the next level.
 - [PayloadAllTheThings](https://github.com/sifat-pr/PayloadsAllTheThings) - A library of payloads.
+- [ProjectDiscovery.io](https://projectdiscovery.io) - Security automation tools for reconnaissance.
