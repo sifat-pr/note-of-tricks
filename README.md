@@ -78,3 +78,4 @@ systemctl list-units --type=service --state=running
 - [HackTricks](https://book.hacktricks.wiki/) - Hacking techniques and privilege escalation.
 - [LostSec](https://lostsec.xyz/) - Bug bounty tools and recon.
 - [BugBountyHunter](https://www.bugbountyhunter.com/) - Take your learnig to the next level.
+- [PayloadAllTheThings](https://github.com/sifat-pr/PayloadsAllTheThings) - A library of payloads.
