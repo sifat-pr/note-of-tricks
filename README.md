@@ -77,3 +77,4 @@ systemctl list-units --type=service --state=running
 - [Playit.gg](https://playit.gg) - Free port forwarding for gamers.
 - [HackTricks](https://book.hacktricks.wiki/) - Hacking techniques and privilege escalation.
 - [LostSec](https://lostsec.xyz/) - Bug bounty tools and recon.
+- [BugBountyHunter](https://www.bugbountyhunter.com/) - Take your learnig to the next level.
